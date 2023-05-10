@@ -10,6 +10,7 @@ def del_contact():
     with open(FILE_PATH, 'w', encoding='utf8') as Phone_book:
         for line in result:
             Phone_book.write(line)
+            print(line.strip())
 
 def add_contact():
     name = input('Введите имя: ')
@@ -18,3 +19,4 @@ def add_contact():
     number = input('Введите номер телефона: ')
     with open(FILE_PATH, 'a', encoding='utf8') as Phone_book:
         Phone_book.write(f'\n{surname} {name} {father},{number}')
+        
