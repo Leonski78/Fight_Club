@@ -25,12 +25,12 @@ def change_contact():
     with open(FILE_PATH, 'r', encoding='utf8') as Phone_book:
         change_phone_book = Phone_book.readlines()
     change_contact_data = input('Введите данные для изменения: ')
-    # result = [line for line in change_phone_book if change_contact_data in line]
-    # for line in result:
-    for line in range (len(change_contact_data)):
-        if change_contact_data in change_phone_book[line]:
-            change_phone_book [line] = input('Введите новые данные: ')
+
+    for i in range (len(change_phone_book)):
+        if change_contact_data in change_phone_book[i]:
+            change_phone_book [i] = input('Введите новые данные: ')
         break    
+
     with open(FILE_PATH, 'w', encoding='utf8') as Phone_book:
         for line in change_phone_book:
             Phone_book.write(line)     
