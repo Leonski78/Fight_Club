@@ -6,7 +6,8 @@ def start_menu():
                         '\n2. Найти контакт'
                         '\n3. Удалить контакт'
                         '\n4. Добавить контакт'
-                        '\n5 Выйти'
+                        '\n5. Изменить контакт'
+                        '\n6 Выйти'
                         '\n--> '))
         # if change == 1:
         #     data_worker.get_phone_book()
@@ -27,6 +28,8 @@ def start_menu():
                 data_worker.del_contact()
             case 4:
                 data_worker.add_contact()
+            case 5:
+                data_worker.change_contact()
             case _:
                 break
 
