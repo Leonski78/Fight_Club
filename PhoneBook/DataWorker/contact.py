@@ -11,4 +11,3 @@ class Contact:
     def __str__(self):
         return f'Фамилия: {self.surname}    Имя: {self.name}    Отчество: {self.father}    телефон: {self.number}'
     
-      

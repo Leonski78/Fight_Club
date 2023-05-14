@@ -32,7 +32,7 @@ def change_contact():
                 change_phone_book[i] = input('Введите новые данные: ') + '\n'
             else:
                 change_phone_book[i] = input('Введите новые данные: ')
-        break
+            break
 
     with open(FILE_PATH, 'w', encoding='utf8') as Phone_book:
         for line in change_phone_book:
